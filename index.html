@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>VoiceKeeps MNL | Audio Guest Book Rental in Muntinlupa</title>
+  <meta name="description" content="Luxury audio guest book rental in Muntinlupa City and Metro Manila for weddings, debuts, birthdays, anniversaries, and receptions. Make your event memorable and capture heartfelt guest messages.">
+  <meta name="keywords" content="audio guest book rental muntinlupa, wedding audio guest book philippines, debut rental metro manila" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "VoiceKeeps MNL",
+    "address": {"@type": "PostalAddress","addressLocality": "Muntinlupa City","addressCountry": "PH"},
+    "areaServed": "Metro Manila",
+    "sameAs": ["https://instagram.com/voicekeepsmnl","https://facebook.com/voicekeepsmnl"]
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSending Booking Request -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("3b6eO8wXYodbCtK74");
+  })();
+</script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+
+  <!-- Taskbar -->
+  <div class="taskbar">
+    <div class="serif text-xl">VoiceKeeps MNL</div>
+    <div>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Book Now</a>
+      <a href="#faq">FAQ</a>
+      <a href="#location">Location</a>
+    </div>
+  </div>
+  <div style="height:60px;"></div>
+
+  <!-- Floating Buttons -->
+  <div id="floatingButtons" class="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
+    <a href="https://www.facebook.com/patricia.bandagosa" target="_blank" class="float-btn bg-[#1877F2]">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Facebook_Messenger_logo_2025.svg" alt="Messenger" />
+    </a>
+    <a href="https://www.instagram.com/voicekeepsmnl" target="_blank" class="float-btn bg-pink-600">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-700"></div>
+    <div class="relative max-w-7xl mx-auto px-8 py-32 grid md:grid-cols-2 gap-14 items-center text-white" data-aos="fade-up">
+      <div>
+        <p class="tracking-widest uppercase text-sm mb-4">Muntinlupa Audio Guest Book Rental</p>
+        <h1 class="serif text-5xl md:text-6xl mb-8">Preserve Real Voices From Your Celebration</h1>
+        <p class="text-lg text-neutral-200 mb-10">Record personal messages through a vintage style phone. Keep audio memories for years.</p>
+      </div>
+      <img src="./Gallery/Main.jpg" class="rounded-[2rem] shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-28 bg-white" id="gallery">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="serif text-4xl mb-14" data-aos="fade-up">Event Gallery</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+<img src="Gallery/Photo_1.jpg"
+     class="rounded-2xl cursor-pointer"
+     onclick="openLightbox(this.src)" />
+
+<video src="Gallery/Video_1.mp4"
+       class="rounded-2xl cursor-pointer object-cover aspect-[4/5]"
+       autoplay
+       loop
+       muted
+       playsinline
+       onmouseenter="this.pause()"
+       onmouseleave="this.play()"
+       onclick="openLightbox(this.src)">
+</video>
+
+<img src="Gallery/Photo_2.jpg"
+     class="rounded-2xl cursor-pointer"
+     onclick="openLightbox(this.src)" />
+
+<video src="Gallery/Video_2.mp4"
+       class="rounded-2xl cursor-pointer object-cover aspect-[4/5]"
+       autoplay
+       loop
+       muted
+       playsinline
+       onmouseenter="this.pause()"
+       onmouseleave="this.play()"
+       onclick="openLightbox(this.src)">
+</video>
+      </div>
+    </div>
+  </section>
+
+<div id="lightbox"
+     class="fixed inset-0 bg-black/80 hidden flex items-center justify-center z-50"
+     onclick="closeLightbox()">
+  <div id="lightboxContent" onclick="event.stopPropagation()"></div>
+</div>
+
+<!-- Booking Section -->
+<section class="bg-neutral-900 text-white py-28" id="booking">
+  <div class="max-w-6xl mx-auto px-8" data-aos="fade-up">
+    <h2 class="serif text-4xl mb-10">Capture Your Guests’ Voices</h2>
+    <p class="text-lg mb-6">
+      Email me directly to confirm your event. I provide personalized guidance on setup and operation of the audio guest book. 
+      You’ll receive clear instructions on timing, placement, and usage to ensure a seamless experience. 
+      I also handle scheduling, coordination, and troubleshooting to make sure your guests’ messages are captured perfectly.
+    </p>
+
+      <!-- Separate Gmail Icon -->
+    <div class="flex items-center gap-3">
+  <!-- Gmail Icon -->
+  <a href="mailto:bandagosapatricia@gmail.com" class="hover:scale-110 transition-transform duration-300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" class="h-10 w-10">
+  </a>
+
+  <!-- Email Text with Transparent Background -->
+  <a href="mailto:bandagosapatricia@gmail.com" 
+     class="text-white hover:text-[#D93025] transition-colors duration-300">
+    bandagosapatricia@gmail.com
+  </a>
+</div>
+</section>
+
+  <!-- FAQ Section -->
+  <section class="py-28 bg-white" id="faq">
+    <div class="max-w-6xl mx-auto px-8" data-aos="fade-up">
+      <h2 class="serif text-4xl mb-10">FAQ</h2>
+      <div class="space-y-4">
+        <details class="bg-neutral-100 p-6 rounded-2xl"><summary>How long rental lasts?</summary><p>Our service covers the full event day, including setup and collection after the program ends. A VoiceKeeps MNL representative 
+        will be on-site to assist guests, provide instructions, and ensure everything runs smoothly.</p></details>
+        <details class="bg-neutral-100 p-6 rounded-2xl"><summary>When files arrive?</summary><p>Your recordings will be delivered within three days via Google Drive or through another method based on your 
+          preference and request.</p></details>
+        <details class="bg-neutral-100 p-6 rounded-2xl"><summary>Power supply</summary><p>Our unit operates on battery power and includes a backup battery pack to ensure uninterrupted recording 
+          throughout your event.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deposit & Terms -->
+  <section class="py-28 bg-neutral-100">
+    <div class="max-w-6xl mx-auto px-8" data-aos="fade-up">
+      <h2 class="serif text-4xl mb-6">Deposit & Policies</h2>
+      <p>Secure your date with a 30% deposit—the balance is due before delivery. Deposits are non-refundable after confirmation.
+        Please provide a safe placement area for our equipment. Damage fees apply for misuse. Delivery is coordinated the day before your event, 
+        and cancellations follow our deposit policy. Refunds are issued only for verified technical issues, with disputes resolved under Philippine law.
+        VoiceKeeps MNL is trusted by clients across Metro Manila, VoiceKeeps MNL delivers professional, high-quality audio guest book experiences for weddings, 
+        debuts, birthdays, and corporate events. Capture your guests heartfelt messages and preserve them for years of cherished memories.</p>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-28 bg-neutral-50" id="location">
+    <div class="max-w-7xl mx-auto px-8" data-aos="fade-up">
+      <h2 class="serif text-4xl mb-10">Service Coverage & Location Guide</h2>
+      <p> VoiceKeeps MNL is based in Muntinlupa City and proudly serves clients across Metro Manila and nearby areas. Use the interactive map above to explore our general service coverage and 
+            see how close your venue is to our base location. For events outside Metro Manila, additional travel fees may apply depending on distance. If you are unsure whether your venue is 
+            within our service area, feel free to contact us through Messenger or Instagram, we’ll be happy to assist with availability and logistics.</p>
+ <iframe
+  class="w-full h-[400px] rounded-2xl mt-8"
+  src="https://maps.google.com/maps?q=Muntinlupa%20City&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="py-10 text-center text-sm bg-neutral-950 text-neutral-400 relative">
+  © 2026 VoiceKeeps MNL
+  <div id="floatingEndButtons" class="flex gap-4 justify-center mt-6 floating-end">
+    <a href="https://www.facebook.com/patricia.bandagosa" target="_blank" class="float-btn bg-[#1877F2]">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Facebook_Messenger_logo_2025.svg" alt="Messenger" />
+    </a>
+    <a href="https://www.instagram.com/voicekeepsmnl" target="_blank" class="float-btn bg-pink-600">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    </a>
+  </div>
+</footer>
+</body>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</html>
